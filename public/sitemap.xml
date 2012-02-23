@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>http://hungryacademy.com/blog/blog/2012/02/22/test-post/</loc>
+        <lastmod>2012-02-22T16:41:59-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://hungryacademy.com/blog/blog/2012/02/22/code-post/</loc>
+        <lastmod>2012-02-22T11:28:57-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://hungryacademy.com/blog/blog/archives/</loc>
+        <lastmod>2012-02-22T16:41:59-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://hungryacademy.com/blog/general-information/</loc>
+        <lastmod>2012-02-22T16:11:09-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://hungryacademy.com/blog/</loc>
+        <lastmod>2012-02-22T16:41:59-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://hungryacademy.com/blog/learning-resources/</loc>
+        <lastmod>2012-02-22T16:11:01-05:00</lastmod>
+    </url>
+</urlset>

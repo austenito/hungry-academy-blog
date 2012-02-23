@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: lifestyle | Hungry Academy]]></title>
+  <link href="http://hungryacademy.com/blog/blog/categories/lifestyle/atom.xml" rel="self"/>
+  <link href="http://hungryacademy.com/blog/"/>
+  <updated>2012-02-23T13:01:21-05:00</updated>
+  <id>http://hungryacademy.com/blog/</id>
+  <author>
+    <name><![CDATA[Hungry Academy]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Test Post]]></title>
+    <link href="http://hungryacademy.com/blog/blog/2012/02/22/test-post/"/>
+    <updated>2012-02-22T10:32:00-05:00</updated>
+    <id>http://hungryacademy.com/blog/blog/2012/02/22/test-post</id>
+    <content type="html"><![CDATA[<p><a href="testlink.html">TestLink</a></p>
+
+<br />Here is some text
+
+
+<h1>here is h1 text</h1>
+
+
+<h2>here is h2 text</h2>
+
+
+<h3>here is h3 text</h3>
+
+
+<h4>here is h4 text</h4>
+
+
+<h5>here is h5 text</h5>
+
+
+<h6>here is h6 text</h6>
+
+
+<p><strong>here is bold text</strong><br />
+<em>here is italic text</em></p>
+
+<ul>
+  <li>here is a list item
+    <ul><li>and a second level</li></ul></li>
+  </ul>
+
+]]></content>
+  </entry>
+  
+</feed>
