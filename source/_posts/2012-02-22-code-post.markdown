@@ -18,7 +18,7 @@ The first, [Declarative Authorization](https://github.com/stffn/declarative_auth
 Later, [CanCan](https://github.com/ryanb/cancan), was inspired by DeclarativeAuthorization and created by Ryan Bates of Railscasts. It provides an intuitive interface to define your authorization rules and integrates into Rails seamlessly.
 
 They're both great choices, but let's look at implementing CanCan.
-
+<!--more-->
 ### Setup
 
 To get started, add `cancan` to the `Gemfile`.

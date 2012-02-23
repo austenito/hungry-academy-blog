@@ -4,7 +4,7 @@
   <title><![CDATA[Hungry Academy Blog]]></title>
   <link href="http://hungryacademy.com/blog/atom.xml" rel="self"/>
   <link href="http://hungryacademy.com/blog/"/>
-  <updated>2012-02-23T17:19:10-05:00</updated>
+  <updated>2012-02-23T17:32:23-05:00</updated>
   <id>http://hungryacademy.com/blog/</id>
   <author>
     <name><![CDATA[Hungry Academy]]></name>
@@ -31,6 +31,9 @@
 <p>Later, <a href="https://github.com/ryanb/cancan">CanCan</a>, was inspired by DeclarativeAuthorization and created by Ryan Bates of Railscasts. It provides an intuitive interface to define your authorization rules and integrates into Rails seamlessly.</p>
 
 <p>They&#8217;re both great choices, but let&#8217;s look at implementing CanCan.</p>
+
+<!--more-->
+
 
 <h3>Setup</h3>
 
