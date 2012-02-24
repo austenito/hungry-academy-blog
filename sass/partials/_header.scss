@@ -1,9 +1,15 @@
-body > header {
+div.container > header {
   background: $header-bg;
   h1 {
-    display: inline-block;
     margin: 0;
+    padding: 88px 0;
+    display: block;
+    text-indent: -9999px;
+    font-size: 46px;
+    line-height: 50px;
+    background: transparent url("../images/header-bg.png") no-repeat top center;
     a, a:visited, a:hover {
+      display: none;
       color: $title_color;
       text-decoration: none;
     }

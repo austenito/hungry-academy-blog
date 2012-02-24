@@ -1,4 +1,27 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
 
-body > header, body > nav {display:none;}
+// body > header, body > nav { display:none; }
+
+::selection, ::-moz-selection { background: #508395; }
+
+body p { color: #777; }
+body { background: white url("../images/content-bg.png") repeat top left;font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;color: white;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust: 100%; }
+body > div, body > div > div { background: 0; border-bottom: 0px; border-right: 0px; }
+.sixteen.columns { width: 940px; background:none; }
+.container { position: relative; width:960px; margin: 0 auto; padding: 0; }
+#main { display: inline-block; }
+.column, .columns { float: left;display: inline;margin-left: 10px;margin-right: 10px; }
+.container > header { font-size:0; padding:0; position:relative; }
+.container > nav { display: block; background: transparent url("../images/pattern-light-bg.png") repeat top left; height: 15px; }
+ul#main-navigation { list-style-type: none; }
+ul#main-navigation li { display: inline-block; float: left; }
+ul#main-navigation li a { color: #fff; }
+aside.sidebar a, aside.sidebar section h1 { color: #fff; }
+aside.sidebar a:hover { text-decoration: underline; }
+aside.sidebar a { text-decoration: none; }
+aside.sidebar li { border-bottom: 0px solid #fff; }
+
+.side-shadow-border, aside.sidebar section h1, aside.sidebar li { -moz-box-shadow: #fff 0px 0px; -webkit-box-shadow: #fff 0px 0px; -o-box-shadow: #fff 0px 0px; box-shadow: #fff 0px 0px; }
+
+#content .blog-index article { padding-top: 0; }
