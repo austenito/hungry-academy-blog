@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: lifestyle | Hungry Academy Blog]]></title>
-  <link href="http://hungryacademy.com/blog/blog/categories/lifestyle/atom.xml" rel="self"/>
-  <link href="http://hungryacademy.com/blog/"/>
-  <updated>2012-02-23T17:32:23-05:00</updated>
-  <id>http://hungryacademy.com/blog/</id>
+  <link href="http://hungryacademy.com/news/blog/categories/lifestyle/atom.xml" rel="self"/>
+  <link href="http://hungryacademy.com/news/"/>
+  <updated>2012-02-24T11:01:46-05:00</updated>
+  <id>http://hungryacademy.com/news/</id>
   <author>
     <name><![CDATA[Hungry Academy]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Test Post]]></title>
-    <link href="http://hungryacademy.com/blog/blog/2012/02/22/test-post/"/>
+    <link href="http://hungryacademy.com/news/blog/2012/02/22/test-post/"/>
     <updated>2012-02-22T10:32:00-05:00</updated>
-    <id>http://hungryacademy.com/blog/blog/2012/02/22/test-post</id>
+    <id>http://hungryacademy.com/news/blog/2012/02/22/test-post</id>
     <content type="html"><![CDATA[<p><a href="testlink.html">TestLink</a></p>
 
 <br />Here is some text

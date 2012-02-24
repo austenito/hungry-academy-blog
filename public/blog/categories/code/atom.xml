@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: code | Hungry Academy Blog]]></title>
-  <link href="http://hungryacademy.com/blog/blog/categories/code/atom.xml" rel="self"/>
-  <link href="http://hungryacademy.com/blog/"/>
-  <updated>2012-02-23T17:32:23-05:00</updated>
-  <id>http://hungryacademy.com/blog/</id>
+  <link href="http://hungryacademy.com/news/blog/categories/code/atom.xml" rel="self"/>
+  <link href="http://hungryacademy.com/news/"/>
+  <updated>2012-02-24T11:01:46-05:00</updated>
+  <id>http://hungryacademy.com/news/</id>
   <author>
     <name><![CDATA[Hungry Academy]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Authorization with CanCan]]></title>
-    <link href="http://hungryacademy.com/blog/blog/2012/02/22/code-post/"/>
+    <link href="http://hungryacademy.com/news/blog/2012/02/22/code-post/"/>
     <updated>2012-02-22T11:28:00-05:00</updated>
-    <id>http://hungryacademy.com/blog/blog/2012/02/22/code-post</id>
+    <id>http://hungryacademy.com/news/blog/2012/02/22/code-post</id>
     <content type="html"><![CDATA[<p>Authorization is an important aspect to most any application. As a system, it is put in place to determine whether the current user has the permission to perform the requested action. Based on this, it typically happens after a user is authenticated, but before a request is processed.</p>
 
 <p>The important question to ask is, <em>is the user allowed to do what they're trying to do</em>?</p>
