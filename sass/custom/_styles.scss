@@ -12,7 +12,8 @@ body { background: white url("../images/content-bg.png") repeat top left;font: 1
 #main { display: inline-block; }
 .column, .columns { float: left;display: inline;margin-left: 10px;margin-right: 10px; }
 
-nav { position: relative; display: block; background: transparent url("../images/pattern-light-bg.png") repeat top left; height: 40px; }
+nav { position: relative; display: inline-block; background: transparent url("../images/pattern-light-bg.png") repeat top left; width: 100%; margin: 0px 10px 20px; }
+nav ul { margin: 0; text-align: center; }
 nav ul li { line-height: 18px; margin-bottom: 12px; display: inline; }
 nav ul li a { display: inline-block; margin: 0 20px; padding: 10px 10px; color: white; text-decoration: none;}
 
