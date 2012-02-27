@@ -8,6 +8,7 @@ body { background: white url("../images/content-bg.png") repeat top left;font: 1
 body p { color: #777; }
 p { -webkit-margin-before: 0; -webkit-margin-after: 0; }
 h1 { font-size: 2.2em; }
+h1, h2, h3, h4, h5, h6 { text-rendering: optimizelegibility; margin: .7em 0; font-weight: bold; }
 .sixteen.columns { width: 940px; background:none; }
 .container { position: relative; width:960px; margin: 0 auto; padding: 0; }
 #main { display: inline; }
@@ -39,7 +40,8 @@ aside.sidebar img {border: none;}
 aside.sidebar ul li a:first-child { }
 
 // markdown style
-p code, li code { color: #fff; background: #002B36; border: 1px solid #002B36; }
+p code, li code { color: #fff; background: #454545; border: 1px solid #454545; vertical-align: 10%; }
+figure.code { margin: .7em 0; }
 
 // article
 #content .blog-index article { padding-top: 0; }
