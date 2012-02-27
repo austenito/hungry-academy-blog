@@ -1,46 +1,53 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
 
+// main
 // body > header, body > nav { display:none; }
-
 ::selection, ::-moz-selection { background: #508395; }
-
-body p { color: #777; }
 body { background: white url("../images/content-bg.png") repeat top left;font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;color: white;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust: 100%; }
+body p { color: #777; }
+p { -webkit-margin-before: 0; -webkit-margin-after: 0; }
+h1 { font-size: 2.2em; }
 .sixteen.columns { width: 940px; background:none; }
 .container { position: relative; width:960px; margin: 0 auto; padding: 0; }
-#main { display: inline-block; }
+#main { display: inline; }
 .column, .columns { float: left;display: inline;margin-left: 10px;margin-right: 10px; }
+.force-wrap, article a, aside.sidebar a { text-decoration: none; }
+body > header, body > nav, body > footer, body #content > article, body #content > div > article, body #content > div > section { padding: 0 10px; }
+#content > div, #content > article { padding-top: 0px; }
+body > div, body > div > div { background: 0; border-bottom: 0px; border-right: 0px; }
+#content { margin-right: 270px; }
 
+// navigation
 nav { position: relative; display: inline-block; background: transparent url("../images/pattern-light-bg.png") repeat top left; width: 940px; margin: 0px 10px 20px; }
 nav ul { margin: 0; text-align: center; }
 nav ul li { line-height: 18px; margin-bottom: 12px; display: inline; }
 nav ul li a { display: inline-block; margin: 0 20px; padding: 10px 10px; color: white; text-decoration: none;}
-
 ul#main-navigation { list-style: none; margin-bottom: 0; }
 ul#main-navigation li a { color: #fff; }
+
+// sidebar
+aside.sidebar { border-top: 0px solid #fff; text-shadow: none; padding: 1.2em 10px 20px 80px; width: 200px; }
+aside.sidebar a { font-size: 10pt; }
 aside.sidebar a, aside.sidebar section h1 { color: #fff; }
 aside.sidebar a:hover { text-decoration: underline; }
-aside.sidebar a { text-decoration: none;}
 aside.sidebar li { border-bottom: 0px solid #fff; border-top: 0px solid #fff; }
-aside.sidebar { border-top: 0px solid #fff; text-shadow: none; }
 aside.sidebar section h1 { border-bottom: 0px solid #fff; }
-
-
 .side-shadow-border, aside.sidebar section h1, aside.sidebar li { -moz-box-shadow: #fff 0px 0px; -webkit-box-shadow: #fff 0px 0px; -o-box-shadow: #fff 0px 0px; box-shadow: #fff 0px 0px; }
-
-#content .blog-index article { padding-top: 0; }
-
-body > div, body > div > div { background: 0; border-bottom: 0px; border-right: 0px; }
-
 img.side-rss-img {width: 13px;}
 aside.sidebar img {border: none;}
+aside.sidebar ul li a:first-child { }
 
+// markdown style
+p code, li code { color: #fff; background: #002B36; border: 1px solid #002B36; }
+
+// article
+#content .blog-index article { padding-top: 0; }
+h1.entry-title a:hover { text-decoration: none; }
+
+// footer
 a.poweredimage {display: block; width: 300px; height: 25px; background: url('../images/footer-powered.png') top no-repeat; text-indent: -99999px;}
-
 a.twitterimage {display: block; width: 35px; height: 25px; background: url('../images/twitter.png') top no-repeat; text-indent: -99999px; background-position: 0 4px;}
 a.twitterimage:hover {background-position: 0 -18px;}
-
 a.emailimage {display: block; width: 30px; height: 25px; background: url('../images/email1.png') top no-repeat; text-indent: -99999px; background-position: 0 5px;}
 a.emailimage:hover {background-position: 0 -24px;}
-
