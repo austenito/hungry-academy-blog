@@ -20,8 +20,10 @@ ul#main-navigation { list-style: none; margin-bottom: 0; }
 ul#main-navigation li a { color: #fff; }
 aside.sidebar a, aside.sidebar section h1 { color: #fff; }
 aside.sidebar a:hover { text-decoration: underline; }
-aside.sidebar a { text-decoration: none; }
+aside.sidebar a { text-decoration: none;}
 aside.sidebar li { border-bottom: 0px solid #fff; }
+aside.sidebar { text-shadow: none; }
+
 
 .side-shadow-border, aside.sidebar section h1, aside.sidebar li { -moz-box-shadow: #fff 0px 0px; -webkit-box-shadow: #fff 0px 0px; -o-box-shadow: #fff 0px 0px; box-shadow: #fff 0px 0px; }
 
