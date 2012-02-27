@@ -48,6 +48,9 @@ figure.code { margin: .7em 0; }
 #content .blog-index article { padding-top: 0; }
 h1.entry-title a:hover { text-decoration: none; }
 
+// archive
+#blog-archives h1 a { color: #fff;}
+
 // footer
 a.poweredimage {display: block; width: 300px; height: 25px; background: url('../images/footer-powered.png') top no-repeat; text-indent: -99999px;}
 a.twitterimage {display: block; width: 35px; height: 25px; background: url('../images/twitter.png') top no-repeat; text-indent: -99999px; background-position: 0 4px;}
