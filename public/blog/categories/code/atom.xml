@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: code | Hungry Academy Blog]]></title>
+  <title><![CDATA[Category: code | Hungry Academy]]></title>
   <link href="http://hungryacademy.com/news/blog/categories/code/atom.xml" rel="self"/>
   <link href="http://hungryacademy.com/news/"/>
-  <updated>2012-02-27T11:17:28-05:00</updated>
+  <updated>2012-02-27T11:20:29-05:00</updated>
   <id>http://hungryacademy.com/news/</id>
   <author>
     <name><![CDATA[Hungry Academy]]></name>
