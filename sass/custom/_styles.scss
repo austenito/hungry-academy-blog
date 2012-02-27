@@ -42,6 +42,7 @@ aside.sidebar ul li a:first-child { }
 // markdown style
 p code, li code { color: #fff; background: #454545; border: 1px solid #454545; vertical-align: 10%; }
 figure.code { margin: .7em 0; }
+.code-title, html .gist .gist-file .gist-meta a[href*="#file"], h3.filename, figure.code figcaption { border-top-color: #565656; border-left-color: #565656; border-right-color: #565656; }
 
 // article
 #content .blog-index article { padding-top: 0; }
