@@ -9,7 +9,7 @@ $link-color-active: adjust-color($link-color-hover, $lightness: -15) !default;
 
 // Main Section Colors
 $main-bg: #cccccc !default;
-$page-bg: #cccccc !default;
+$page-bg: #f3f3f4 !default;
 $article-border: #eeeeee !default;
 
 $header-bg: #cccccc !default;
@@ -17,7 +17,7 @@ $header-border: lighten($header-bg, 15) !default;
 $title-color: #f2f2f2 !default;
 $subtitle-color: #aaa !default;
 
-$text-color: #aaa !default;
+$text-color: #777 !default;
 $text-color-light: #aaa !default;
 $type-border: #ddd !default;
 

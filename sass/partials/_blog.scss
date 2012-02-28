@@ -96,7 +96,7 @@ article + article {
     a { color: inherit; &:hover { color: $link-color-hover; } }
   }
   a[rel=full-article] {
-    background: darken($main-bg, 5);
+    background: darken($page-bg, 5);
     display: inline-block;
     padding: .4em .8em;
     margin-right: .5em;
@@ -105,7 +105,7 @@ article + article {
     @extend .serif;
     @include transition(background-color .3s);
     &:hover {
-      background: #eaeaea;
+      background: darken($main-bg, 5);
       text-shadow: none;
       color: #252525;
     }

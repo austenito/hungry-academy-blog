@@ -1,12 +1,21 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+@font-face {
+  font-family: "MuseoSlab500";
+  src: url("/../fonts/museo/Museo_Slab_500-webfont.eot");
+  src: url("/../fonts/museo/Museo_Slab_500-webfont.eot?#iefix") format('embedded-opentype'),
+       url("/../fonts/museo/Museo_Slab_500-webfont.woff") format('woff'),
+       url("/../fonts/museo/Museo_Slab_500-webfont.ttf") format('truetype'),
+       url("/../fonts/museo/Museo_Slab_500-webfont.svg#MuseoSlab500") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
-
-body { background: #ccc url("/../images/noise.png") repeat top left; font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #262626; -webkit-font-smoothing: antialiased;-webkit-text-size-adjust: 100%; }
+body { background: #ccc url("/../images/noise.png") repeat top left; font: 14px/21px MuseoSlab500, helvetica, arial, sans-serif; color: #262626; -webkit-font-smoothing: antialiased;-webkit-text-size-adjust: 100%; }
 body p { color: #777; }
 p { -webkit-margin-before: 0; -webkit-margin-after: 0; }
 h1 { font-size: 2.2em; }
-h1, h2, h3, h4, h5, h6 { text-rendering: optimizelegibility; margin: .7em 0; font-weight: bold; }
+h1, h2, h3, h4, h5, h6 { text-rendering: optimizelegibility; margin: .7em 0; font-weight: bold; font-family: MuseoSlab500, helvetica, arial, sans-serif; }
 .sixteen.columns { width: 940px; background:none; }
 .container { position: relative; width:960px; margin: 0 auto; padding: 0; }
 #main { display: inline; }
@@ -19,7 +28,8 @@ body > div, body > div > div { background: 0; border-bottom: 0px; border-right: 
 #content { padding-top: 0; }
 
 // navigation
-nav { position: relative; display: inline-block; background: #383838 url("/../images/noise.png") repeat top left; width: 940px; margin: 0px 10px 0px; }
+nav { width: 103%; position: relative; display: inline-block; padding: 0em; line-height: 1em; background: #CA6B25; color: #e3d7bf; margin: 0 -1em; box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); -moz-transition: box-shadow 0.2s ease-out; -o-transition: box-shadow 0.2s ease-out; -webkit-transition: box-shadow 0.2s ease-out; -ms-transition: box-shadow 0.2s ease-out; letter-spacing: 0.5px; direction:ltr; }
+nav:before   { content: ""; position: absolute; top: 4px; left: 0; right: 0; border: 1.1em solid; border-color: transparent #ccc; }
 nav ul { margin: 0; text-align: center; }
 nav ul li { line-height: 18px; margin-bottom: 12px; display: inline; }
 nav ul li a { display: inline-block; margin: 0 20px; padding: 10px 10px; color: white; text-decoration: none;}
@@ -44,7 +54,6 @@ figure.code { margin: .7em 0; }
 .code-title, html .gist .gist-file .gist-meta a[href*="#file"], h3.filename, figure.code figcaption { border-top-color: #565656; border-left-color: #565656; border-right-color: #565656; }
 
 // article
-#content .blog-index article { padding-top: 0; }
 h1.entry-title a:hover { text-decoration: none; }
 
 // archive
