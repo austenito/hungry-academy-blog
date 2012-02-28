@@ -11,11 +11,12 @@
   font-style: normal;
 }
 
-body { background: #ccc url("/../images/noise.png") repeat top left; font: 14px/21px MuseoSlab500, helvetica, arial, sans-serif; color: #262626; -webkit-font-smoothing: antialiased;-webkit-text-size-adjust: 100%; }
+body { background: #ccc url("/../images/noise.png") repeat top left; font: 14px/21px helvetica, arial, sans-serif; color: #262626; -webkit-font-smoothing: antialiased;-webkit-text-size-adjust: 100%; }
 body p { color: #777; }
 p { -webkit-margin-before: 0; -webkit-margin-after: 0; }
-h1 { font-size: 2.2em; }
-h1, h2, h3, h4, h5, h6 { text-rendering: optimizelegibility; margin: .7em 0; font-weight: bold; font-family: MuseoSlab500, helvetica, arial, sans-serif; }
+h1 { font-size: 2.2em; font-family: helvetica, arial, sans serif; }
+h2 { font-family: MuseoSlab500, helvetica, arial, sans-serif; text-transform: uppercase; font-size: 14px; }
+h1, h2, h3, h4, h5, h6 { text-rendering: optimizelegibility; margin: .7em 0; font-weight: bold; }
 .sixteen.columns { width: 940px; background:none; }
 .container { position: relative; width:960px; margin: 0 auto; padding: 0; }
 #main { display: inline; }
@@ -28,7 +29,7 @@ body > div, body > div > div { background: 0; border-bottom: 0px; border-right: 
 #content { padding-top: 0; }
 
 // navigation
-nav { width: 103%; position: relative; display: inline-block; padding: 0em; line-height: 1em; background: #CA6B25; color: #e3d7bf; margin: 0 -1em; box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); -moz-transition: box-shadow 0.2s ease-out; -o-transition: box-shadow 0.2s ease-out; -webkit-transition: box-shadow 0.2s ease-out; -ms-transition: box-shadow 0.2s ease-out; letter-spacing: 0.5px; direction:ltr; }
+nav { width: 103%; position: relative; display: inline-block; padding: 0em; line-height: 1em; background: #CA6B25; color: #e3d7bf; margin: 0 -1em; box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); -moz-transition: box-shadow 0.2s ease-out; -o-transition: box-shadow 0.2s ease-out; -webkit-transition: box-shadow 0.2s ease-out; -ms-transition: box-shadow 0.2s ease-out; letter-spacing: 0.5px; direction:ltr; font-family: helvetica, arial, sans serif; }
 nav:before   { content: ""; position: absolute; top: 4px; left: 0; right: 0; border: 1.1em solid; border-color: transparent #ccc; }
 nav ul { margin: 0; text-align: center; }
 nav ul li { line-height: 18px; margin-bottom: 12px; display: inline; }
