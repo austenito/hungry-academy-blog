@@ -16,6 +16,7 @@ body > header, body > nav, body > footer, body #content > article, body #content
 #content > div, #content > article { padding-top: 0px; }
 body > div, body > div > div { background: 0; border-bottom: 0px; border-right: 0px; }
 #content { margin: 0 270px 0 10px; padding-top: 20px; background: #f3f3f4 url("/../images/noise.png") repeat top left; }
+#content { padding-top: 0; }
 
 // navigation
 nav { position: relative; display: inline-block; background: #999 url("/../images/noise.png") repeat top left; width: 940px; margin: 0px 10px 0px; }
