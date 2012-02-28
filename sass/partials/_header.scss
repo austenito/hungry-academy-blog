@@ -8,7 +8,7 @@ div.container > header {
     font-size: 46px;
     line-height: 50px;
     background: transparent url("/../images/header-sprite.png") no-repeat top center;
-    background-position: 21px -10px;
+    background-position: 17px 0;
     a, a:visited, a:hover {
       display: none;
       color: $title_color;
@@ -16,7 +16,7 @@ div.container > header {
     }
   }
   h1:hover {
-    background-position: 17px -168px;
+    background-position: 17px -166px;
   }
   h2 {
     margin: .2em 0 0;
