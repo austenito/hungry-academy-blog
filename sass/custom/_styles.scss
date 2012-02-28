@@ -53,8 +53,7 @@ h1.entry-title a:hover { text-decoration: none; }
 #blog-archives h1 a { color: inherit; }
 
 // footer
-a.poweredimage { padding-top: 5px; display: block; width: 310px; height: 35px; background: url('/../images/footer-powered-sprite.png') top no-repeat; text-indent: -99999px; background-position: 0 7px;}
-a.poweredimage:hover { background-position: 0 -33px; }
+a.poweredimage { display: block; width: 305px; height: 25px; background: url('/images/footer-powered.png') top no-repeat; text-indent: -99999px; }
 
 a.twitterimage {display: block; width: 35px; height: 25px; background: url('/../images/twitter.png') top no-repeat; text-indent: -99999px; background-position: 0 4px;}
 a.twitterimage:hover {background-position: 0 -18px;}
