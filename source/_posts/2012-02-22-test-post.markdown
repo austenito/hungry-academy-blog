@@ -6,7 +6,7 @@ comments: true
 categories: lifestyle
 author: "Andrew Thal"
 ---
-<a href="testlink.html">TestLink</a>
+[TestLink](testlink.html)
 <br />Here is some text
 <h1>here is h1 text</h1>
 <h2>here is h2 text</h2>

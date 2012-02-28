@@ -1,10 +1,8 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
 
-// main
-// body > header, body > nav { display:none; }
 ::selection, ::-moz-selection { background: #508395; }
-body { background: #ccc url("/../images/noise.png") repeat top left;font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;color: white;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust: 100%; }
+body { background: #ccc url("/../images/noise.png") repeat top left;font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #262626; -webkit-font-smoothing: antialiased;-webkit-text-size-adjust: 100%; }
 body p { color: #777; }
 p { -webkit-margin-before: 0; -webkit-margin-after: 0; }
 h1 { font-size: 2.2em; }
@@ -20,7 +18,7 @@ body > div, body > div > div { background: 0; border-bottom: 0px; border-right: 
 #content { margin-right: 270px; }
 
 // navigation
-nav { position: relative; display: inline-block; background: transparent url("../images/pattern-light-bg.png") repeat top left; width: 940px; margin: 0px 10px 20px; }
+nav { position: relative; display: inline-block; background: #999 url("/../images/noise.png") repeat top left; width: 940px; margin: 0px 10px 20px; }
 nav ul { margin: 0; text-align: center; }
 nav ul li { line-height: 18px; margin-bottom: 12px; display: inline; }
 nav ul li a { display: inline-block; margin: 0 20px; padding: 10px 10px; color: white; text-decoration: none;}
@@ -30,7 +28,7 @@ ul#main-navigation li a { color: #fff; }
 // sidebar
 aside.sidebar { border-top: 0px solid #fff; text-shadow: none; padding: 1.2em 10px 20px 80px; width: 200px; }
 aside.sidebar a { font-size: 10pt; }
-aside.sidebar a, aside.sidebar section h1 { color: #fff; }
+aside.sidebar a, aside.sidebar section h1 { color: #262626; }
 aside.sidebar a:hover { text-decoration: underline; }
 aside.sidebar li { border-bottom: 0px solid #fff; border-top: 0px solid #fff; }
 aside.sidebar section h1 { border-bottom: 0px solid #fff; }
