@@ -27,6 +27,7 @@ nav:before   { pointer-events: none; content: ""; position: absolute; top: 4px; 
 nav ul#main-navigation { margin: 0; text-align: center; }
 nav ul#main-navigation li { line-height: 18px; margin-bottom: 12px; display: inline; }
 nav ul#main-navigation li a { display: inline-block; margin: 0 20px; padding: 10px 10px; color: white; text-decoration: none; }
+nav ul#main-navigation li a:hover { color: #777; }
 
 // sidebar
 aside.sidebar { border: 0; text-shadow: none; padding: 0 10px 10px 50px; width: 200px; background: #383838 url("/../images/noise.png") repeat top left; }
