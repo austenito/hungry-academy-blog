@@ -17,9 +17,8 @@ body p { color: #777; }
 h1 { font-size: 2.2em; font-family: helvetica, arial, sans serif; }
 h2 { font-family: MuseoSlab500, helvetica, arial, sans-serif; text-transform: uppercase; font-size: 14px; }
 h1, h2, h3, h4, h5, h6 { text-rendering: optimizelegibility; }
-.container { position: relative; width:960px; margin: 0 auto; padding: 0; }
-body > header, body > nav, body > footer, body #content > article, body #content > div > article, body #content > div > section {   }
-body > div, body > div > div { background: 0; border-bottom: 0px; border-right: 0px; }
+.container { position: relative; width:960px; margin: 0 auto; padding: 0 0 0 14px; }
+body div, body div div { background: 0; border: 0; }
 #content { margin: 0 270px 0 10px; background: #f3f3f4 url("/../images/noise.png") repeat top left; }
 
 // navigation
