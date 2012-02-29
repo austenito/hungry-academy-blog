@@ -20,7 +20,7 @@ helvetica, arial, sans-serif; font-weight: normal;}
 h1 { font-size: 24px; color: $text-color-dark; }
 h2 { text-transform: uppercase; font-size: 14px; color: $text-color-light; }
 
-.container { position: relative; width:960px; margin: 0 auto; padding: 0 0 0 0; }
+.container { position: relative; width:960px; margin: 0 auto; padding: 0 0 0 14px; }
 body div, body div div { background: 0; border: 0; }
 #content { margin: 0 270px 0 10px; background: $page-bg url("/../images/noise.png") repeat top left; }
 
