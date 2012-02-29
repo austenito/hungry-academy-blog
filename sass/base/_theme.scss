@@ -23,7 +23,7 @@ $text-color-dark: #262626 !default;
 $type-border: #777 !default;
 
 /* Navigation */
-$nav-bg: #999 !default;
+$nav-bg: #CA6B25 !default;
 $nav-bg-front: image-url('noise.png') !default;
 $nav-bg-back: linear-gradient(lighten($nav-bg, 8), $nav-bg, darken($nav-bg, 11)) !default;
 $nav-color: #eee !default;
@@ -73,7 +73,7 @@ a {
 }
 
 html {
-  background: $page-bg image-url('noise.png') top left;
+  background: $main-bg image-url('noise.png') top left;
 }
 body {
   > div {

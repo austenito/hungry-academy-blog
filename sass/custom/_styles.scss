@@ -12,7 +12,7 @@
   font-weight: normal;
   font-style: normal;
 }
-body { background: #ccc url("/../images/noise.png") repeat top left; font: 14px/21px helvetica, arial, sans-serif; -webkit-font-smoothing: antialiased;-webkit-text-size-adjust: 100%; }
+body { font: 14px/21px helvetica, arial, sans-serif; -webkit-font-smoothing: antialiased;-webkit-text-size-adjust: 100%; }
 
 h1, h2, h3, h4, h5, h6 { text-rendering: optimizelegibility; font-family: MuseoSlab500,
 helvetica, arial, sans-serif; font-weight: normal;}
@@ -21,11 +21,11 @@ h2 { text-transform: uppercase; font-size: 14px; color: $text-color-light; }
 
 .container { position: relative; width:960px; margin: 0 auto; padding: 0 0 0 0; }
 body div, body div div { background: 0; border: 0; }
-#content { margin: 0 270px 0 10px; background: #f3f3f4 url("/../images/noise.png") repeat top left; }
+#content { margin: 0 270px 0 10px; background: $page-bg url("/../images/noise.png") repeat top left; }
 
 // navigation
-nav { width: 990px; position: relative; display: inline-block; padding: 0em; line-height: 1em; background: #CA6B25; margin: 0 -15px; box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); -moz-transition: box-shadow 0.2s ease-out; -o-transition: box-shadow 0.2s ease-out; -webkit-transition: box-shadow 0.2s ease-out; -ms-transition: box-shadow 0.2s ease-out; letter-spacing: 0.5px; direction:ltr; font-family: helvetica, arial, sans serif; }
-nav:before   { pointer-events: none; content: ""; position: absolute; top: 4px; left: 0; right: 0; border: 1.1em solid; border-color: transparent #ccc; }
+nav { width: 990px; position: relative; display: inline-block; padding: 0em; line-height: 1em; background: $nav-bg; margin: 0 -15px; box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); -moz-transition: box-shadow 0.2s ease-out; -o-transition: box-shadow 0.2s ease-out; -webkit-transition: box-shadow 0.2s ease-out; -ms-transition: box-shadow 0.2s ease-out; letter-spacing: 0.5px; direction:ltr; font-family: helvetica, arial, sans serif; }
+nav:before   { pointer-events: none; content: ""; position: absolute; top: 4px; left: 0; right: 0; border: 1.1em solid; border-color: transparent $main-bg; }
 nav ul#main-navigation { margin: 0; text-align: center; }
 nav ul#main-navigation li { line-height: 18px; margin-bottom: 12px; display: inline; }
 nav ul#main-navigation li a { display: inline-block; margin: 0 20px; padding: 10px 10px; color: $nav-color; text-decoration: none; }
