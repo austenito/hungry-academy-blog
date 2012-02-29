@@ -24,7 +24,7 @@ body > div, body > div > div { background: 0; border-bottom: 0px; border-right: 
 
 // navigation
 nav { width: 103%; position: relative; display: inline-block; padding: 0em; line-height: 1em; background: #CA6B25; color: #e3d7bf; margin: 0 -1em; box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); -moz-transition: box-shadow 0.2s ease-out; -o-transition: box-shadow 0.2s ease-out; -webkit-transition: box-shadow 0.2s ease-out; -ms-transition: box-shadow 0.2s ease-out; letter-spacing: 0.5px; direction:ltr; font-family: helvetica, arial, sans serif; }
-nav:before   { content: ""; position: absolute; top: 4px; left: 0; right: 0; border: 1.1em solid; border-color: transparent #ccc; }
+nav:before   { pointer-events: none; content: ""; position: absolute; top: 4px; left: 0; right: 0; border: 1.1em solid; border-color: transparent #ccc; }
 nav ul#main-navigation { margin: 0; text-align: center; }
 nav ul#main-navigation li { line-height: 18px; margin-bottom: 12px; display: inline; }
 nav ul#main-navigation li a { display: inline-block; margin: 0 20px; padding: 10px 10px; color: white; text-decoration: none; }
