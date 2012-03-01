@@ -3,7 +3,7 @@ layout: post
 title: "Test Post"
 date: 2012-02-22 10:32
 comments: true
-categories: lifestyle
+categories: [events, community, people]
 author: "Andrew Thal"
 ---
 [TestLink](testlink.html)
