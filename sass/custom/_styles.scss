@@ -20,7 +20,7 @@ helvetica, arial, sans-serif; font-weight: normal;}
 h1 { font-size: 24px; color: $text-color-dark; }
 h2 { text-transform: uppercase; font-size: 14px; color: $text-color-light; }
 
-.container { position: relative; width:960px; margin: 0 auto; padding: 0 0 0 14px; }
+.container { position: relative; width:960px; margin: 0 auto; padding: 0 0 0 ; }
 body div, body div div { background: 0; border: 0; }
 #content { margin: 0 270px 0 10px; background: $page-bg url("/../images/noise.png") repeat top left; }
 
@@ -29,7 +29,7 @@ nav { width: 990px; position: relative; display: inline-block; padding: 0em; lin
 nav:before   { pointer-events: none; content: ""; position: absolute; top: 4px; left: 0; right: 0; border: 1.1em solid; border-color: transparent $main-bg; }
 nav ul#main-navigation { margin: 0; text-align: center; }
 nav ul#main-navigation li { line-height: 18px; margin-bottom: 12px; display: inline; }
-nav ul#main-navigation li a { display: inline-block; margin: 0 20px; padding: 10px 10px; color: $nav-color; text-decoration: none; }
+nav ul#main-navigation li a { display: inline-block; margin: 0px 20px; padding: 10px 10px; color: #eee; text-decoration: none; font-size: 16px; font-weight: 400; font-family: helvetica, arial, sans serif; }
 nav ul#main-navigation li a:hover { color: $nav-color-hover; }
 
 // sidebar
