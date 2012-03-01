@@ -48,3 +48,11 @@ a.twitterimage {display: block; width: 35px; height: 25px; background: url('/../
 a.twitterimage:hover {background-position: 0 -18px;}
 a.emailimage {display: block; width: 30px; height: 25px; background: url('/../images/email1.png') top no-repeat; text-indent: -99999px; background-position: 0 5px;}
 a.emailimage:hover {background-position: 0 -24px;}
+
+// mobile
+
+@media only screen and (max-width: 767px) {
+div.container > header h1 { margin: 0; padding: 120px 0; display: block; text-indent: -9999px; background: transparent url("../images/header-bg-mobile.png") no-repeat top center; }
+}
+
+
