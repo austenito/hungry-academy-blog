@@ -4,7 +4,7 @@
   <title><![CDATA[Category: code | hungry academy]]></title>
   <link href="http://hungryacademy.com/news/blog/categories/code/atom.xml" rel="self"/>
   <link href="http://hungryacademy.com/news/"/>
-  <updated>2012-03-02T15:49:15-05:00</updated>
+  <updated>2012-03-02T16:44:28-05:00</updated>
   <id>http://hungryacademy.com/news/</id>
   <author>
     <name><![CDATA[Hungry Academy]]></name>
@@ -14,262 +14,22 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Authorization with CanCan]]></title>
-    <link href="http://hungryacademy.com/news/blog/2012/02/22/code-post/"/>
-    <updated>2012-02-22T11:28:00-05:00</updated>
-    <id>http://hungryacademy.com/news/blog/2012/02/22/code-post</id>
-    <content type="html"><![CDATA[<p>Authorization is an important aspect to most any application. As a system, it is put in place to determine whether the current user has the permission to perform the requested action. Based on this, it typically happens after a user is authenticated, but before a request is processed.</p>
-
-<p>The important question to ask is, <em>is the user allowed to do what they're trying to do</em>?</p>
-
-<h2>Getting Started</h2>
-
-<p>When considering implementing an authorization system in Rails, there are two popular libraries.</p>
-
-<p>The first, <a href="https://github.com/stffn/declarative_authorization">Declarative Authorization</a> has been around since 2008. It introduced the idea of a centralized permissions file and a clean DSL for referring to those permissions.</p>
-
-<p>Later, <a href="https://github.com/ryanb/cancan">CanCan</a>, was inspired by DeclarativeAuthorization and created by Ryan Bates of Railscasts. It provides an intuitive interface to define your authorization rules and integrates into Rails seamlessly.</p>
-
-<p>They're both great choices, but let's look at implementing CanCan.</p>
-
-<!--more-->
-
-
-<h3>Setup</h3>
-
-<p>To get started, add <code>cancan</code> to the <code>Gemfile</code>.</p>
-
-<p><code>ruby
-gem "cancan"
-</code></p>
-
-<p>Then run <code>bundle</code> from the command line.</p>
-
-<h3>The Current User</h3>
-
-<p>It is conventional to implement a helper method named <code>current_user</code> in your controllers. It should return an instance of the <code>User</code> model that is currently active in the session.</p>
-
-<p><code>CanCan</code> is expecting <code>current_user</code> to be available for its controller includes to work, which are setup automatically in descendants of <code>ActionController::Base</code> once the <code>CanCan</code> gem is required.</p>
-
-<h2>Creating Abilities</h2>
-
-<p>To define an application's authorization rules, we'll think in terms of abilities. For example, is the <code>current_user</code> able to update their own information?</p>
-
-<h3>Generate the Ability File</h3>
-
-<p>As of version 1.5, <code>CanCan</code> includes a generator to create our <code>Ability</code> file for Rails 3 applications. It is placed in the <code>app/models</code> directory and is where all of your ability definitions will live. To execute the generator, run the following from the command line:</p>
-
-<p><code>
-rails generate cancan:ability
-</code></p>
-
-<h3>Defining Abilities</h3>
-
-<p><code>CanCan</code> provides a succinct DSL for defining abilities. Let's dive in and look at a simple example:</p>
-
-<p>```ruby</p>
-
-<h1>app/models/ability.rb</h1>
-
-<p>class Ability</p>
-
-<p>  # Add in CanCan's ability definition DSL
-  include CanCan::Ability</p>
-
-<p>  def initialize( user )</p>
-
-<pre><code># Handle the case where we don't have a current_user i.e. the user is a guest
-user ||= User.new
-
-# Define a few sample abilities
-can    :manage , Article
-cannot :manage , Comment
-can    :read   , Tag , released: true
-</code></pre>
-
-<p>  end
-end
-```</p>
-
-<p>The <code>CanCan</code> generator will provide the structure for your Ability class. At a basic level then, all you need to do is implement the constructor. Here we can see a few things...</p>
-
-<ul>
-<li>As is recommended in the <code>CanCan</code> documentation, the case where a <code>current_user</code> is <code>nil</code> is handled.</li>
-<li>A user can perform all actions (<code>:manage</code>) the <code>Article</code> model</li>
-<li>Users cannot perform any actions on the <code>Comment</code> model.</li>
-<li>Users can read instances of the <code>Tag</code> model where <code>baz.released</code> is <code>true</code></li>
-</ul>
-
-
-<h3>Building Roles</h3>
-
-<p>By default, <code>CanCan</code> does not make any assumptions about whether you will need roles in your application and what they might be. At their most basic, we could implement administrators and non-administrators.</p>
-
-<p>To begin implementing roles, let's consider a simple <code>User</code> model.</p>
-
-<p>```ruby</p>
-
-<h1>app/models/user.rb</h1>
-
-<p>class User &lt; ActiveRecord::Base
-  attr_accessible :name , :email</p>
-
-<p>  # User::Roles
-  # The available roles
-  Roles = [ :admin , :default ]</p>
-
-<p>  def is?( requested_role )</p>
-
-<pre><code>self.role == requested_role.to_s
-</code></pre>
-
-<p>  end
-end
-```</p>
-
-<p>As you can see, the <code>User::Roles</code> array lists the different roles that a <code>User</code> might be. Since we want to persist a user's role, we would add a <code>String</code> field called <code>role</code> to the <code>User</code> model via a database migration.</p>
-
-<h3>Admin Abilities</h3>
-
-<p>Now, to define the abilities of an <code>:admin</code>, we should revisit the previously created <code>Ability</code> class.</p>
-
-<p>```ruby</p>
-
-<h1>app/models/ability.rb</h1>
-
-<p>class Ability
-  include CanCan::Ability</p>
-
-<p>  def initialize( user )</p>
-
-<pre><code>user ||= User.new
-
-# Define User abilities
-if user.is? :admin
-  can :manage, Article
-else
-  can :read, Article
-end
-</code></pre>
-
-<p>  end</p>
-
-<p>end
-```</p>
-
-<p>If a user is an <code>:admin</code>, they're allowed to manage any <code>Article</code>. Otherwise, users can only read articles. By using the simple <code>User#is?</code> method, we can expressively determine the role of a user.</p>
-
-<p>See the <code>CanCan</code> wiki for more information on <a href="https://github.com/ryanb/cancan/wiki/Defining-Abilities">Defining Abilities</a> and <a href="https://github.com/ryanb/cancan/wiki/Role-Based-Authorization">Role Based Authorization</a>.</p>
-
-<h2>Checking Abilities</h2>
-
-<p>Once your application's abilities are defined, they can be checked throughout the app.</p>
-
-<h3>Can?</h3>
-
-<p>The <code>can?</code> check uses your ability definitions to determine whether a user action is allowed.</p>
-
-<p><code>erb
-&lt;%= link_to "New User" , new_user_path if can? :create, User %&gt;
-</code></p>
-
-<h4>Cannot?</h4>
-
-<p>Alternatively, the <code>cannot?</code> helper is available and checks whether a user action is NOT allowed.</p>
-
-<p><code>rhtml
-&lt;% if cannot? :destroy , @user %&gt;
-  &lt;span class="permission-message"&gt;You aren't allowed to delete this user.&lt;/span&gt;
-&lt;% end %&gt;
-</code></p>
-
-<h3>Load and Authorize Resource</h3>
-
-<p><code>CanCan</code> provides numerous helpers for use at the controller level. One that is particularly useful is <code>load_and_authorize_resource</code>. Calling this at a class level in a controller will automatically load the model and authorize the requested action.</p>
-
-<p>```ruby</p>
-
-<h1>app/controllers/users_controller.rb</h1>
-
-<p>class UsersController &lt; ApplicationController
-  load_and_authorize_resource
-end
-```</p>
-
-<h3>Handling Authorization Failure</h3>
-
-<p>When using <code>load_and_authorize_resource</code> manually, an authorization failure will raise a exception. The way to handle these exceptions is by writing a <code>rescue_from</code> block in your base controller.</p>
-
-<p>```ruby</p>
-
-<h1>app/controllers/application_controller.rb</h1>
-
-<p>class ApplicationController &lt; ActionController::Base</p>
-
-<p>  # Catch all CanCan errors and alert the user of the exception
-  rescue_from CanCan::AccessDenied do | exception |</p>
-
-<pre><code>redirect_to root_url, :alert =&gt; exception.message
-</code></pre>
-
-<p>  end</p>
-
-<p>end
-```</p>
-
-<p>The exception passed in to the <code>rescue_from</code> block will contain the data necessary to inform the user of the error.</p>
-
-<h2>Usage Patterns</h2>
-
-<h3>Dealing with Complexity</h3>
-
-<p>As your application grows beyond a few models, ability definitions can
-quickly become complex. At first, a solution such as the one described
-in the last section of the <code>CanCan</code> <a href="https://github.com/ryanb/cancan/wiki/Role-Based-Authorization">Role Based
-Authorization</a>
-wiki page can be useful. Even then, the <code>ability.rb</code> file can grow
-unruly at fast pace.</p>
-
-<p>At a certain point, there are few options to keep ability definitions
-under control:</p>
-
-<ul>
-<li>Roll your own solution to split ability definitions in to multiple files by role or model.</li>
-<li>Use a <code>CanCan</code> extension gem such as <a href="https://github.com/kristianmandrup/cantango">cantango</a> or <a href="https://github.com/quickleft/role_up">role_up</a></li>
-</ul>
-
-
-<h3>Testing Abilities</h3>
-
-<p>Writing tests against your ability definitions at the unit level, as
-opposed to through functional or integration tests, can be a huge
-benefit for your codebase. There are wonderful matchers available for
-<code>RSpec</code> in <code>CanCan</code>. Check out the <a href="https://github.com/ryanb/cancan/wiki/Testing-Abilities">testing wiki
-page</a> for code
-examples.</p>
-
-<h2>Exercises</h2>
-
-<p>Included file 'custom/sample_project.html' not found in _includes directory</p>
-
-<ol>
-<li>Follow the instructions above to install CanCan and generate the abilities file.</li>
-<li>Follow the previous Local Authentication tutorial to build authentication using Devise.</li>
-<li>Define a <code>role</code> attribute in your users table. Create one admin and one non-admin user.</li>
-<li>Define abilities such that the admin can manage an <code>Article</code> and a normal user can only read them (using <code>index</code> and <code>show</code>).</li>
-<li>Add checks in the view templates to hide links when the user is not permitted to execute the associated action.</li>
-<li>Use <code>load_and_authorize_resource</code> in the <code>ArticlesController</code> and remove any unnecessary code in the actions.</li>
-</ol>
-
-
-<h2>References</h2>
-
-<ul>
-<li><a href="https://github.com/ryanb/cancan/wiki">CanCan Wiki</a></li>
-<li><a href="https://github.com/stffn/declarative_authorization">Declarative Authorization</a></li>
-<li><a href="http://edgeguides.rubyonrails.org/security.html#countermeasures">Security Countermeasures Rails Guide</a></li>
-</ul>
-
+    <title type="html"><![CDATA[Welcome to the new HungryAcademy.com]]></title>
+    <link href="http://hungryacademy.com/news/blog/2012/03/02/welcome-to-the-new-hungryacademy-dot-com/"/>
+    <updated>2012-03-02T16:42:00-05:00</updated>
+    <id>http://hungryacademy.com/news/blog/2012/03/02/welcome-to-the-new-hungryacademy-dot-com</id>
+    <content type="html"><![CDATA[<p>When we announced Hungry Academy we promised to follow a model of open
+education. We'd publish our curriculum, tutorials, projects, and
+calendar.</p>
+
+<p>This is the fulfillment of that promise. <a href="http://hungryacademy.com">HungryAcademy.com</a> will be the
+hub our activity. In the navigation above you find links to our
+writings, calendar, and discussion forum. We expect these collections
+and resources to change dramatically over the next few weeks as we
+figure out what works and what doesn't.</p>
+
+<p>If you want to become a developer, we invite you to follow along,
+participate in our community, and learn to build amazing software.</p>
 ]]></content>
   </entry>
   

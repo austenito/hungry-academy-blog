@@ -4,7 +4,7 @@
   <title><![CDATA[Category: community | hungry academy]]></title>
   <link href="http://hungryacademy.com/news/blog/categories/community/atom.xml" rel="self"/>
   <link href="http://hungryacademy.com/news/"/>
-  <updated>2012-03-02T15:49:15-05:00</updated>
+  <updated>2012-03-02T16:44:28-05:00</updated>
   <id>http://hungryacademy.com/news/</id>
   <author>
     <name><![CDATA[Hungry Academy]]></name>
@@ -14,41 +14,22 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Test Post]]></title>
-    <link href="http://hungryacademy.com/news/blog/2012/02/22/test-post/"/>
-    <updated>2012-02-22T10:32:00-05:00</updated>
-    <id>http://hungryacademy.com/news/blog/2012/02/22/test-post</id>
-    <content type="html"><![CDATA[<p><a href="testlink.html">TestLink</a></p>
+    <title type="html"><![CDATA[Welcome to the new HungryAcademy.com]]></title>
+    <link href="http://hungryacademy.com/news/blog/2012/03/02/welcome-to-the-new-hungryacademy-dot-com/"/>
+    <updated>2012-03-02T16:42:00-05:00</updated>
+    <id>http://hungryacademy.com/news/blog/2012/03/02/welcome-to-the-new-hungryacademy-dot-com</id>
+    <content type="html"><![CDATA[<p>When we announced Hungry Academy we promised to follow a model of open
+education. We'd publish our curriculum, tutorials, projects, and
+calendar.</p>
 
-<br />Here is some text
+<p>This is the fulfillment of that promise. <a href="http://hungryacademy.com">HungryAcademy.com</a> will be the
+hub our activity. In the navigation above you find links to our
+writings, calendar, and discussion forum. We expect these collections
+and resources to change dramatically over the next few weeks as we
+figure out what works and what doesn't.</p>
 
-
-<h1>here is h1 text</h1>
-
-
-<h2>here is h2 text</h2>
-
-
-<h3>here is h3 text</h3>
-
-
-<h4>here is h4 text</h4>
-
-
-<h5>here is h5 text</h5>
-
-
-<h6>here is h6 text</h6>
-
-
-<p><strong>here is bold text</strong><br />
-<em>here is italic text</em></p>
-
-<ul>
-  <li>here is a list item
-    <ul><li>and a second level</li></ul></li>
-  </ul>
-
+<p>If you want to become a developer, we invite you to follow along,
+participate in our community, and learn to build amazing software.</p>
 ]]></content>
   </entry>
   
