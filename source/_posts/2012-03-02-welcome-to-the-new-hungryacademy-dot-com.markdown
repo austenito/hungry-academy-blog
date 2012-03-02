@@ -10,7 +10,7 @@ education. We'd publish our curriculum, tutorials, projects, and
 calendar.
 
 This is the fulfillment of that promise. [HungryAcademy.com](http://hungryacademy.com) will be the
-hub our activity. In the navigation above you find links to our
+hub for our activity. In the navigation above you find links to our
 writings, calendar, and discussion forum. We expect these collections
 and resources to change dramatically over the next few weeks as we
 figure out what works and what doesn't.
