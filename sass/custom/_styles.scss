@@ -25,8 +25,7 @@ h1, h2, h3, h4, h5, h6 { text-rendering: optimizelegibility; font-family: MuseoS
   #content { margin: 0 270px 0 10px; background: $page-bg url("/../images/noise.png") repeat top left; }
 
   // navigation
-  nav { width: 990px; position: relative; display: inline-block; padding: 0em; line-height: 1em; background: $nav-bg; margin: 0 -15px; box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); -moz-transition: box-shadow 0.2s ease-out; -o-transition: box-shadow 0.2s ease-out; -webkit-transition: box-shadow 0.2s ease-out; -ms-transition: box-shadow 0.2s ease-out; letter-spacing: 0.5px; direction:ltr; font-family: helvetica, arial, sans serif; }
-  nav:before   { pointer-events: none; content: ""; position: absolute; top: 4px; left: 0; right: 0; border: 1.1em solid; border-color: transparent $main-bg; }
+  nav { width: inherit; position: relative; background: $nav-bg; box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); -moz-transition: box-shadow 0.2s ease-out; -o-transition: box-shadow 0.2s ease-out; -webkit-transition: box-shadow 0.2s ease-out; -ms-transition: box-shadow 0.2s ease-out; letter-spacing: 0.5px; direction:ltr; font-family: helvetica, arial, sans serif; }
   nav ul#main-navigation { margin: 0; text-align: center; }
   nav ul#main-navigation li { line-height: 18px; margin-bottom: 12px; display: inline; }
   nav ul#main-navigation li a { display: inline-block; margin: 0px 20px; padding: 10px 10px; color: #eee; text-decoration: none; font-size: 16px; font-weight: 400; font-family: helvetica, arial, sans serif; }
@@ -52,12 +51,16 @@ h1, h2, h3, h4, h5, h6 { text-rendering: optimizelegibility; font-family: MuseoS
   // mobile
 
   @media only screen and (max-width: 767px) {
-    div.container > header h1 { margin: 0; padding: 120px 0; display: block; text-indent: -9999px; background: transparent url("../images/header-bg-mobile.png") no-repeat top center; }
+    div.container > header h1 { margin-top: 5px; margin-left: 17px; padding: 130px 0; display: block; text-indent: -9999px; background: transparent url("../images/header-bg-mobile.png") no-repeat top center; }
     .container, #main, #content, body { width: inherit; }
     #content { margin: 0; }
     div#content div.blog-index { width: inherit; }
     aside.sidebar { width: inherit; }
-
+    nav { line-height: 3em; }
+    nav ul#main-navigation li a { margin: 0 5px; }
   }
 
-
+  @media only screen and (min-width: 767px) {
+    nav          { width: 990px; margin: 0 -15px; }
+    nav:before   { pointer-events: none; content: ""; position: absolute; top: 4px; left: 0; right: 0; border: 1.1em solid; border-color: transparent #cccccc; }
+    }
