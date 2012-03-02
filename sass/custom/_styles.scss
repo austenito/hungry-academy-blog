@@ -50,6 +50,13 @@ h1, h2, h3, h4, h5, h6 { text-rendering: optimizelegibility; font-family: MuseoS
 
   // mobile
 
+  @media only screen and (max-width: 321px) {
+    table a.poweredimage { position:absolute; right: 5px; }
+    table a.emailimage, table a.twitterimage { margin-top: 70px;}
+    table a.emailimage { margin-right: 10px; }
+    table td.hungry { position:relative; }
+  }
+
   @media only screen and (max-width: 767px) {
     div.container > header h1 { margin-top: 5px; margin-left: 17px; padding: 130px 0; display: block; text-indent: -9999px; background: transparent url("../images/header-bg-mobile.png") no-repeat top center; }
     .container, #main, #content, body { width: inherit; }
@@ -60,7 +67,8 @@ h1, h2, h3, h4, h5, h6 { text-rendering: optimizelegibility; font-family: MuseoS
     nav ul#main-navigation li a { margin: 0 5px; }
   }
 
+
   @media only screen and (min-width: 767px) {
     nav          { width: 990px; margin: 0 -15px; }
     nav:before   { pointer-events: none; content: ""; position: absolute; top: 4px; left: 0; right: 0; border: 1.1em solid; border-color: transparent #cccccc; }
-    }
+  }
