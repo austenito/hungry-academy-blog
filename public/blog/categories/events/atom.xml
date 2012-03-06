@@ -2,14 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: events | hungry academy]]></title>
-  <link href="http://hungryacademy.com/news/blog/categories/events/atom.xml" rel="self"/>
-  <link href="http://hungryacademy.com/news/"/>
-<<<<<<< HEAD
-  <updated>2012-03-02T16:54:08-05:00</updated>
-=======
-  <updated>2012-03-02T17:49:18-05:00</updated>
->>>>>>> 9b87a42d035f4ab4a2639c2098c23b392195bd7c
-  <id>http://hungryacademy.com/news/</id>
+  <link href="http://blog.hungryacademy.com/blog/categories/events/atom.xml" rel="self"/>
+  <link href="http://blog.hungryacademy.com/"/>
+  <updated>2012-03-06T16:55:56-05:00</updated>
+  <id>http://blog.hungryacademy.com/</id>
   <author>
     <name><![CDATA[Hungry Academy]]></name>
     
@@ -19,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Welcome to the new HungryAcademy.com]]></title>
-    <link href="http://hungryacademy.com/news/blog/2012/03/02/welcome-to-the-new-hungryacademy-dot-com/"/>
+    <link href="http://blog.hungryacademy.com/blog/2012/03/02/welcome-to-the-new-hungryacademy-dot-com/"/>
     <updated>2012-03-02T16:42:00-05:00</updated>
-    <id>http://hungryacademy.com/news/blog/2012/03/02/welcome-to-the-new-hungryacademy-dot-com</id>
+    <id>http://blog.hungryacademy.com/blog/2012/03/02/welcome-to-the-new-hungryacademy-dot-com</id>
     <content type="html"><![CDATA[<p>When we announced Hungry Academy we promised to follow a model of open
 education. We'd publish our curriculum, tutorials, projects, and
 calendar.</p>
