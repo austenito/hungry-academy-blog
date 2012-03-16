@@ -5,8 +5,6 @@ date: 2012-03-16 16:08
 comments: true
 categories: [community]
 ---
-##Week 1
-
 The lead-up to Hungry Academy was exciting to say the least.  Emails flew from one coast to the other filled with getting-to-know-you facts, advice the best areas of the District for intrepid apartment-searchers, and hopes and thoughts on Hungry Academy itself.  It was a time filled with what would most aptly be described as "unbridled enthusiasm".
 
 After orientation, we hopped straight into two days of hand holding and group meditation.
