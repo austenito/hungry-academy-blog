@@ -4,7 +4,7 @@
   <title><![CDATA[Category: community | hungry academy]]></title>
   <link href="http://blog.hungryacademy.com/blog/categories/community/atom.xml" rel="self"/>
   <link href="http://blog.hungryacademy.com/"/>
-  <updated>2012-03-06T16:55:56-05:00</updated>
+  <updated>2012-03-16T16:12:45-04:00</updated>
   <id>http://blog.hungryacademy.com/</id>
   <author>
     <name><![CDATA[Hungry Academy]]></name>
@@ -12,6 +12,37 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[First Week]]></title>
+    <link href="http://blog.hungryacademy.com/blog/2012/03/16/first-week/"/>
+    <updated>2012-03-16T16:08:00-04:00</updated>
+    <id>http://blog.hungryacademy.com/blog/2012/03/16/first-week</id>
+    <content type="html"><![CDATA[<h2>Week 1</h2>
+
+<p>The lead-up to Hungry Academy was exciting to say the least.  Emails flew from one coast to the other filled with getting-to-know-you facts, advice the best areas of the District for intrepid apartment-searchers, and hopes and thoughts on Hungry Academy itself.  It was a time filled with what would most aptly be described as "unbridled enthusiasm".</p>
+
+<p>After orientation, we hopped straight into two days of hand holding and group meditation.</p>
+
+<p> Just kidding, it was improv based team building exercises.  Groan if you like, but it was fun  - and helpful!  In a crowd of 23 new faces, it was a great way to get to know each other.  Otherwise it would have been 6 months of "Dude, can you help me with this?", "nice work, Ace", and "Hey Monster-Man, can you teach me how to dougie?".  Jessie Shternshus deserves a lot of credit for forging 26 individuals into a team in less than 48 hours.</p>
+
+<p>With a solid team foundation under-foot, we rolled up our sleeves and took a peek under the hood of Ruby. Here's the rundown:</p>
+
+<h3>Step 1:</h3>
+
+<p>Get our feet wet with a walk through of Jeff's intro tutorial: <a href="http://tutorials.jumpstartlab.com/projects/ruby_in_100_minutes.html">Ruby in 100 minutes</a></p>
+
+<h3>Step 2:</h3>
+
+<p>Take the basics and apply that knowledge to something a bit more real world.  Enter: <a href="http://tutorials.jumpstartlab.com/projects/eventmanager.html">Event Manager</a>.  Here we learned what a mess data can become.  So, we cleaned it up and got everything into a standardized format.  Pretty awesome for the first week!</p>
+
+<h3>Step 3:</h3>
+
+<p>Annoy everyone you know on <a href="http://www.twitter.com">Twitter</a>!  Why use a dummy account when you can spam real people with<a href="http://tutorials.jumpstartlab.com/projects/jstwitter.html"> JSTwitter</a>?</p>
+
+<p>There it is.  We're a few days in, and we're already creating programs that have real world applications.  All in all, it's been an awesome week and we're excited to dig into the next project: <a href="http://tutorials.jumpstartlab.com/projects/event_reporter.html">Event Reporter</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Welcome to the new HungryAcademy.com]]></title>
