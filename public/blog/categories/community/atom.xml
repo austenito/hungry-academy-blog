@@ -4,7 +4,7 @@
   <title><![CDATA[Category: community | hungry academy]]></title>
   <link href="http://blog.hungryacademy.com/blog/categories/community/atom.xml" rel="self"/>
   <link href="http://blog.hungryacademy.com/"/>
-  <updated>2012-04-06T15:52:53-04:00</updated>
+  <updated>2012-04-16T05:53:36-07:00</updated>
   <id>http://blog.hungryacademy.com/</id>
   <author>
     <name><![CDATA[Hungry Academy]]></name>
@@ -14,9 +14,41 @@
 
   
   <entry>
+    <title type="html"><![CDATA[When Life Gives You Lightning]]></title>
+    <link href="http://blog.hungryacademy.com/blog/2012/04/16/when-life-gives-you-lightning/"/>
+    <updated>2012-04-16T05:51:00-07:00</updated>
+    <id>http://blog.hungryacademy.com/blog/2012/04/16/when-life-gives-you-lightning</id>
+    <content type="html"><![CDATA[<p>Mark Twain once wrote, "I didn't have time to write a short letter, so I wrote a long one."</p>
+
+<p>A lightning talk is the modern day equivalent of Twain's letter. Each presentation is only five minutes long. The challenge lies in delivering something
+of value within that short timeframe. Lightning talks are a cornerstone of the software industry - especially within the Ruby community - and regularly occur during conferences and meetups. The goal of Hungry Academy is not just to teach us coding but also to bring us into the wider development world - which makes preparing and giving lightning talks an important part of the Hungry Academy curriculum. Every Friday morning, 8-12 of us deliver a talk on the topic of the week. Topics so far have ranged from the Ruby community at large to authentication and testing tools.</p>
+
+<h2>Why Important</h2>
+
+<p>Lightning talks are great for two reasons. They allow developers a less formal and less intimidating forum to practice presentation skills. Because of the nature of our work, we often do not have many opportunities to practice "soft" business skills. In the past this has led to developers taking the role of code monkeys that simply need to be fed tasks. Ironically, developers are in fact excellent problem solvers, and given the opportunity they can contribute greatly to the direction of their companies. Lightning talks help bridge the communications gap, turning mere coders into business leaders.</p>
+
+<p>Meanwhile, giving a presentation in under five minutes reqires a clear, concise understanding of the topic. Your mastery will continue develop as you educate others. Lightning talks are a good skill to foster, increasing both soft business skills and technical mastery.</p>
+
+<h2>Tips on Preparing</h2>
+
+<p>Because lightning talks are shorter, preparing for them is different than for a standard presentation.</p>
+
+<h3>Here are five tips for success:</h3>
+
+<p>1) Center your talk around one point and make that point as early as possible. Although you usually have 5 minutes for the lightning talk, if the point can be made in two - take two.
+2) Keep background information to a minimum. The audience for most lightening talks is made up of smart, problem solving individuals. They don't need their hands held. Just make your point.
+3) Slides are not required. Think of a lightning talk as a conversation you have with a group of your friends, but they keep quiet for five minutes. A fancy chart isn't necessary to make your point.
+4) DO NOT LIVE CODE. EVER. DON'T DO IT. DON'T EVEN TRY. Murphy's law will bite you. Use a screencast or screenshot instead.
+5) Practice. Your presentation is five minutes but without practice it is just a waste of your audience's time. Remember who is watching - people who live and breathe efficiency.</p>
+
+<p>Check back on the Hungry Academy site in the next few days and weeks as we begin publishing screencasts and videos from our weekly lightning talks!</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Hungry Academy: One Month In]]></title>
     <link href="http://blog.hungryacademy.com/blog/2012/04/06/hungry-academy-one-month-in/"/>
-    <updated>2012-04-06T15:52:00-04:00</updated>
+    <updated>2012-04-06T15:52:00-07:00</updated>
     <id>http://blog.hungryacademy.com/blog/2012/04/06/hungry-academy-one-month-in</id>
     <content type="html"><![CDATA[<p>One month ago, 24 of us walked into the glass double doors on our floor in LivingSocial HQ. We didn’t know each other, and while some people had done a fair amount of work in Ruby, Rails, and other programming languages, some of us were complete beginners. What a difference a month makes!</p>
 
@@ -33,7 +65,7 @@
   <entry>
     <title type="html"><![CDATA[The Power of Community]]></title>
     <link href="http://blog.hungryacademy.com/blog/2012/04/06/the-power-of-community/"/>
-    <updated>2012-04-06T15:05:00-04:00</updated>
+    <updated>2012-04-06T15:05:00-07:00</updated>
     <id>http://blog.hungryacademy.com/blog/2012/04/06/the-power-of-community</id>
     <content type="html"><![CDATA[<p>Most people’s mental image of the typical computer programmer is less than appetizing. He (or possibly she) is an overweight, glasses-wearing nerd who hacks away in his or her basement and finds more comfort in their computer then in other people. It’s a shame that such a stereotype exists, as it discourages those who might be interested in programming from making the leap.</p>
 
@@ -60,7 +92,7 @@
   <entry>
     <title type="html"><![CDATA[First Week]]></title>
     <link href="http://blog.hungryacademy.com/blog/2012/03/16/first-week/"/>
-    <updated>2012-03-16T16:08:00-04:00</updated>
+    <updated>2012-03-16T16:08:00-07:00</updated>
     <id>http://blog.hungryacademy.com/blog/2012/03/16/first-week</id>
     <content type="html"><![CDATA[<p>The lead-up to Hungry Academy was exciting to say the least.  Emails flew from one coast to the other filled with getting-to-know-you facts, advice the best areas of the District for intrepid apartment-searchers, and hopes and thoughts on Hungry Academy itself.  It was a time filled with what would most aptly be described as "unbridled enthusiasm".</p>
 
@@ -89,7 +121,7 @@
   <entry>
     <title type="html"><![CDATA[Welcome to the new HungryAcademy.com]]></title>
     <link href="http://blog.hungryacademy.com/blog/2012/03/02/welcome-to-the-new-hungryacademy-dot-com/"/>
-    <updated>2012-03-02T16:42:00-05:00</updated>
+    <updated>2012-03-02T16:42:00-08:00</updated>
     <id>http://blog.hungryacademy.com/blog/2012/03/02/welcome-to-the-new-hungryacademy-dot-com</id>
     <content type="html"><![CDATA[<p>When we announced Hungry Academy we promised to follow a model of open
 education. We'd publish our curriculum, tutorials, projects, and
